@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+
+  <title>Coffee Shop</title>
+
+</head>
+<body>
+  
+  <div class="header">
+    <h1>Welcome to Coffee Shop</h1>
+  </div>
+  
+  <div class="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li>tea</li>
+      <li>Espresso</li>
+      <li>Cappuccino</li>
+      <li>Latte</li>
+    </ul>
+  </div>
+  
+  <div class="order-form">
+    <h2>Place your order</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="drink">Drink:</label>
+    <select id="drink" name="drink">
+      <option value="tea">tea</option>
+      <option value="espresso">Espresso</option>
+      <option value="cappuccino">Cappuccino</option>
+      <option value="latte">Latte</option>
+    </select>
+    <br>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+  
+  <div class="order-status">
+    <h2>Order Status</h2>
+    <p id="order-status-message"></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
